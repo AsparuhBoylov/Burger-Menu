@@ -1,0 +1,98 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.menu-open {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 25px;
+    left: 95%;
+    padding: 0;
+    cursor: pointer;
+}
+
+.menu-open span {
+    display: flex;
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    margin: 6px 0 3px 5px;
+}
+
+.nav {
+    position: absolute;
+    top: -301px;
+    left: 90%;
+    width: 10%;
+    height: 300px;
+    background: wheat;
+    transition: 0.5s;
+}
+
+.nav.active {
+    position: absolute;
+    top: 0;
+    left: 90%;
+    width: 10%;
+    height: 300px;
+    background: wheat;
+    transition: 0.5s;
+}
+
+.menu-close {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 15px;
+    left: 76%;
+    padding: 0;
+    cursor: pointer;
+    background-color: cornsilk;
+}
+
+.menu-close span {
+    display: flex;
+    width: 20px;
+    height: 2px;
+    background-color: black;
+}
+
+.menu-close span:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 13px;
+    left: 5px;
+}
+
+.menu-close span:nth-child(2) {
+    transform: rotate(135deg);
+    position: relative;
+    top: 11px;
+    left: 5px;
+}
+
+.nav ul {
+    margin-top: 80px;
+}
+
+.nav ul li {
+    list-style: none;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
